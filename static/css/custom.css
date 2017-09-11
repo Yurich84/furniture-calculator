@@ -1,0 +1,43 @@
+
+.navbar {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.navbar .dropdown-menu {
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.top-banner {
+	background: url('../imgs/bg_interior.jpg') no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+  margin: 0;
+}
+
+.top-banner .text-custom {
+	text-shadow: 0 5px 9px #000;
+}
+
+.nav-item a {
+	padding: 15px;
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	border: #343a40 solid 1px;
+}
+
+.nav-item a:hover {
+	border: #666 solid 1px;
+	color: #ccc;
+}
+
+.router-link-exact-active {
+	border: #666 solid 1px;
+	background: #777;
+}
