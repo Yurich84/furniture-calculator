@@ -55,6 +55,9 @@ export default {
   		this.data.model = ''
       // console.log(this.data)
   		this.$parent.$options.methods.changeData(this.data)
+
+      this.$router.push( { name: 'model', params: {order: 2}} );
+      
   	}
   }
 }

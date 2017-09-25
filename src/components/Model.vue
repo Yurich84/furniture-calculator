@@ -5,7 +5,8 @@
     <p>Выберите модель</p>
 
     <div class="row">
-      <div class="col-3" v-for="model in models" @click="changeItem(model.id)">
+      <div class="col-2 col-sm-1 center" v-for="model in models" @click="changeItem(model.id)">
+        <p>{{ model.name }}</p>
         <img :src=model.img width="100">
       </div>
     </div>
@@ -52,6 +53,7 @@ export default {
   		// меняем модель
   		this.data.model = id
   		this.$parent.$options.methods.changeData(this.data)
+      this.$router.push( { name: 'color', params: {order: 3}} );
   	}
   }
 }
